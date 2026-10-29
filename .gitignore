@@ -1,0 +1,8 @@
+node_modules/
+.expo/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+android/build/
+ios/build/
+.eas/

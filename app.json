@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "SecureView CCTV",
+    "slug": "secureview-cctv",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.example.secureview"
+    },
+    "android": {
+      "package": "com.example.secureview",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow SecureView to attach a photo of your CCTV issue or site.",
+          "cameraPermission": "Allow SecureView to take a photo of your CCTV issue or site."
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
+      "expo-asset"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "249d08c8-7fbf-4958-b131-5c5432dfafa3"
+      }
+    }
+  }
+}
